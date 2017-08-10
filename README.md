@@ -17,7 +17,7 @@ allprojects {
 
 Include the dependency:
 ```groovy
-classpath "com.github.bq:poeditor-android-gradle-plugin:0.2.5"
+classpath "com.github.santanaluiz:poeditor-android-gradle-plugin:0.2.8"
 ```
 Enjoy!
 
@@ -32,6 +32,7 @@ poEditorPlugin.api_token = <poeditor_api_token>
 poEditorPlugin.project_id = <poeditor_project_id> 
 poEditorPlugin.default_lang = "en"
 poEditorPlugin.res_dir_path = "${project.rootDir}/app/src/main/res"
+poEditorPlugin.generate_tablet_res = true
 ```
 
 The complete attribute list:
@@ -42,6 +43,7 @@ Attribute                     | Description
 ```project_id```              | Poeditor project ID.
 ```default_lang```            | The lang to be used to build default ```strings.xml``` (```/values``` folder)
 ```res_dir_path```            | The path to the project's ```/res``` folder.
+```generate_tablet_res```     | Enable/Disable generate tablet strings. Default value: `false`
 
 If you want to customize another property open a PR or leave a comment!
 
